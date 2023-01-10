@@ -24,10 +24,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   Small portfolio page showcasing Fabian Kongelf by Fabian Kongelf.
 
 # the subpath of your site, e.g. /blog
-baseurl: "/"
+baseurl: ""
 
 # the base hostname & protocol for your site, e.g. http://example.com
 url: "https://fabiankongelf.github.io"
+# url: 127.0.0.1:4000
 
 # sosial media links
 twitter_username: TBA
@@ -35,8 +36,14 @@ github_username:  FabianKongelf
 
 # Build settings
 # theme: minima
+
+permalink: none
+
+sass:
+  sass_dir: _sass
+
 plugins:
-  # - jekyll-feed
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
