@@ -1,43 +1,46 @@
+import React from 'react';
 import './Overlay.css';
 
-function Overlay(pagecounter = 1, antpages = 5)  {
+function Overlay({pageCount, antPages})  {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="Overlay">
+      <header className="Overlay-header">
         <a 
-          className="App-link"
+          className="Overlay-link"
           href="http://fabiankongelf.github.io/"
         >
           Fabian Kongelf
         </a>
-
-        <p className="App-pagecounter">
-          {pagecounter} / {antpages}
-        </p>
       </header>
 
-      <footer className="App-footer">
+      <aside className="Overlay-pagecounter">
+        <p>
+          {pageCount} / {antPages}
+        </p>
+      </aside>
+
+      <footer className="Overlay-footer">
         <ul>
           <li>
             <a 
-              className="App-sosials"
-              href="#"
+              className="Overlay-sosials"
+              href="https://github.com/FabianKongelf"
             >
               GitHub
             </a>
           </li>
           <li>
             <a 
-              className="App-sosials"
-              href="#"
+              className="Overlay-sosials"
+              href="https://www.linkedin.com/in/fabian-kongelf-4965b7242/"
             >
               Linkedin
             </a>
           </li>
           <li>
             <a 
-              className="App-sosials"
-              href="#"
+              className="Overlay-sosials"
+              href="https://www.instagram.com/"
             >
               Instagram
             </a>

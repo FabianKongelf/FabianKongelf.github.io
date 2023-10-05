@@ -3,67 +3,75 @@
   margin: 0;
 }
 
-.App {
-  background-color: #1a1a1a; /* #282c34 */
+.Overlay {
   height: 100vh;
   width: 100vw;
   font-size: calc(5px + 1vmin);
-  color: white;
 }
 
 /* Header */
-.App-header {
+.Overlay-header {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 1vmin 5vmin
+  padding: 1vmin 5vmin;
 }
 
-.App-link {
+.Overlay-link {
   color: rgba(255,255,255,.3);
   text-decoration: none;
   transition: .5s;
 }
 
-.App-link:hover {
+.Overlay-link:hover {
   color: white;
 }
 
+/* Pagecounter */
+.Overlay-pagecounter {
+  position: absolute;
+  color: rgba(255,255,255,.3);
+  top: 0;
+  right: 0;
+  padding: 1vmin 5vmin;
+  transition: .5s;
+}
+
 /* Sosials */
-.App-footer {
+.Overlay-footer {
   position: fixed;
   bottom: 2vh;
   left: 0;
 }
 
-.App-footer ul {
+.Overlay-footer ul {
   display: inline;
   list-style: none;
   padding-left: 5vmin;
 }
 
-.App-footer li {
+.Overlay-footer li {
   display: inline;
   padding-right: 2vmin;
 }
 
-.App-sosials {
+.Overlay-sosials {
   text-decoration: none;
   color: rgba(255,255,255,.25);
   transition: .5s;
 }
 
-.App-sosials:hover {
+.Overlay-sosials:hover {
   color: white;
 }
 
-.App-sosials img {
+.Overlay-sosials img {
   filter: invert(25%);
   width: 3vmin;
   height: 3vmin;
   transition: .5s;
 }
 
-.App-sosials img:hover {
+.Overlay-sosials img:hover {
   filter: invert(100%);
 }
