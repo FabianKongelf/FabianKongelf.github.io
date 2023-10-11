@@ -1,7 +1,7 @@
 import React from 'react';
 import './Overlay.css';
 
-function Overlay({pageCount, antPages})  {
+const Overlay = (props: {pageCount: string, antPages: string}): React.JSX.Element => {
   return (
     <div className="Overlay">
       <header className="Overlay-header">
@@ -15,7 +15,7 @@ function Overlay({pageCount, antPages})  {
 
       <aside className="Overlay-pagecounter">
         <p>
-          {pageCount} / {antPages}
+          {props.pageCount} / {props.antPages}
         </p>
       </aside>
 
